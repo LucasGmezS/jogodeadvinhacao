@@ -1,0 +1,23 @@
+import random
+palpite = 0
+
+
+numero_secreto = random.randint(1 ,100)
+print("Welcome to game!")
+print("try guess the number between 1 and 100 ")
+
+while palpite != numero_secreto:
+    palpite = int(input("Enter your guess: "))
+
+
+    if palpite == numero_secreto:
+        print("Congratulations")
+    elif palpite < numero_secreto:
+        print("O Numero é maior")
+    else:
+        print ("O numero é menor")
+        
+
+
+
+    
